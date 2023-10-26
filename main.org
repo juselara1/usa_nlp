@@ -1,0 +1,30 @@
+#+PROPERTY: header-args:python :session :results value file
+
+#+begin_src python
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+
+matplotlib.use("Agg")
+#+end_src
+
+#+RESULTS:
+[[file:None]]
+
+#+begin_src python
+x = np.random.normal(size=(10, 2))
+print(x)
+#+end_src
+
+#+RESULTS:
+[[file:None]]
+
+#+begin_src python
+fig, ax = plt.subplots()
+ax.scatter(x[:, 0], x[:, 1])
+fig.savefig("tmp.png")
+print("tmp.png")
+#+end_src
+
+#+RESULTS:
+[[file:None]]

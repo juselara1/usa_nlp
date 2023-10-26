@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usa_nlp"
+version = "2023.2.0"
+authors = [{name = "Juan Lara", email = "julara@unal.edu.co"}]
+description = "Contenido del curso de Procesamiento de Lenguaje Natural en la maestria en Inteligencia Artificial de la Universidad Sergio Arboleda"
+requires-python = ">3.8"
+dependencies = [
+    "nltk",
+    "spacy",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "gensim"
+]
+
+[project.optional-dependencies]
+dev = ["black", "pyright"]
